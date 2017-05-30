@@ -1,0 +1,198 @@
+\documentclass[14pt,fleqn]{extarticle}
+\RequirePackage{prepwell-eng}
+\previewoff
+
+\newcommand\third{\frac{1}{3}} 
+
+\begin{document}
+
+\begin{problem}
+	\statement 
+    
+    Three bags contain balls as shown in the table below 
+    
+    \begin{center}
+  \begin{tabular}{NNNN}
+   \toprule
+        \text{Bag} & \text{White} & \text{Black} & \text{Red} \\
+   \midrule 
+   B_1 & 1 & 2 & 3 \\
+    \midrule 
+    B_2 & 2 & 1 & 1 \\
+    \midrule 
+    B_3 & 4 & 3 & 2 \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+A bag is chosen at random and two balls are drawn from it.
+They happen to be red and white. What is the probability 
+that the balls came from $B_3$? 
+
+\begin{step}
+  \begin{options} 
+     \correct 
+       
+       If we define the following events 
+
+\begin{center}
+  \begin{tabular}{Nc}
+   \toprule
+   \text{Event} & Meaning\\
+\midrule
+	A & 1 red \& 1 white ball drawn\\
+\midrule
+	B_1 & Bag $B_1$ picked\\
+	\midrule
+	B_2 & Bag $B_2$ picked\\
+	\midrule
+	B_3 & Bag $B_3$ picked\\
+\bottomrule
+\end{tabular}
+\end{center}
+then we need to find $\condp{B_3}{A}$ 
+
+     \incorrect
+        
+          If we define the following events 
+
+\begin{center}
+  \begin{tabular}{Nc}
+   \toprule
+   \text{Event} & Meaning\\
+\midrule
+	A & 1 red \& 1 white ball drawn\\
+\midrule
+	B_1 & Bag $B_1$ picked\\
+	\midrule
+	B_2 & Bag $B_2$ picked\\
+	\midrule
+	B_3 & Bag $B_3$ picked\\
+\bottomrule
+\end{tabular}
+\end{center}
+then we need to find $\prob{B_3\cap A}$ 
+    \end{options} 
+     \reason 
+     
+     \underline{If neither $A$ nor $B_3$} have happened, then yes, it would 
+make sense to evaluate $\prob{B_3\cap A}$ \newline  
+
+But $A$ has already happened. Hence, the probability we are looking 
+for is $\condp{B_3}{A}$ 
+       
+\end{step}
+
+\begin{step}
+  \begin{options} 
+     \correct 
+     
+     
+     \begin{align}
+	\condp{B_3}{A} &= \fcondp{B_3}{A} \\
+	&= \dfrac{\condp{A}{B_3}\cdot \prob{B_3}}{\sum_{k=1}^3 \condp{A}{B_k}\cdot \prob{B_k}}
+\end{align}
+
+where $\prob{B_k}$ be the probability of choosing the $k-$th bag
+       
+    \end{options} 
+     \reason 
+      
+      This is simply the mathematical formulation of Bayes' Theorem 
+      \begin{align}
+      \condp{B_3}{A} &= \fcondp{B_3}{A} \\
+      \text{where } \prob{A} &= \underbrace{\sum_{k=1}^3\condp{A}{B_k}\cdot \prob{B_k}}_{\text{Theorem of Total Probability}}
+\end{align} 
+
+Notice that in order to evaluate $\condp{B_3}{A}$, we will first need to 
+find $\condp{A}{B_k}$ for $k=1,2,3$ 
+\end{step}
+
+\begin{step}
+  \begin{options} 
+     \correct 
+       
+       Given the number of balls of each colour in each bag, we can infer the 
+       following 
+       \begin{center}
+  \begin{tabular}{NN}
+   \toprule
+       \prob{B_1} = \third & \condp{A}{B_1} = \frac{1}{5} \\
+   \midrule 
+   \prob{B_2} = \third & \condp{A}{B_2} =  \frac{1}{3} \\
+    \midrule 
+    \prob{B_3} = \third & \condp{A}{B_3} =  \frac{2}{9} \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+       
+     \incorrect
+        
+         Given the number of balls of each colour in each bag, we can infer the 
+       following 
+       \begin{center}
+  \begin{tabular}{NN}
+   \toprule
+       \prob{B_1} = \third & \condp{A}{B_1} = \frac{1}{10} \\
+   \midrule 
+   \prob{B_2} = \third & \condp{A}{B_2} =  \frac{1}{6} \\
+    \midrule 
+    \prob{B_3} = \third & \condp{A}{B_3} =  \frac{1}{9} \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+        
+    \end{options} 
+     \reason 
+     
+     All three bags are \underline{equally likely} to be picked. Hence 
+     $P \left(B_1 \right) = P \left(B_2 \right) = P \left(B_3 \right) = \frac{1}{3}$ \newline 
+
+The (slightly) tricky bit is finding $\condp{A}{B_k}$ -- the probability of 
+drawing a red and a white ball from the $k-$th bag \newline 
+
+Now, if $B_k$ has $R$ red balls, $W$ white balls and $T$ total balls, then 
+\[ \qquad \condp{A}{B_k} = \dfrac{^RC_1\times ^WC_1}{^TC_2} \] 
+
+And hence
+\begin{center}
+  \begin{tabular}{NNN}
+   \toprule
+	\text{Bag} & \text{Total Balls} & \condp{A}{B_k} \\
+\midrule
+	B_1 & 6 & \dfrac{^3C_1\times ^1C_1}{^6C_2} = \frac{1}{5} \\
+\midrule
+	B_2 & 4 & \dfrac{^2C_1\times ^1C_1}{^4C_2} = \frac{1}{3} \\
+\midrule
+	B_3 & 9 & \dfrac{^4C_1\times ^2C_1}{^9C_2} = \frac{2}{9} \\
+\bottomrule
+  \end{tabular}
+\end{center}
+
+       
+\end{step}
+
+\begin{step}
+  \begin{options} 
+     \correct 
+       
+       And therefore 
+       \[ \condp{B_3}{A} = \frac{5}{17} \]
+     \incorrect
+     
+            And therefore 
+       \[ \condp{B_3}{A} = \frac{17}{45} \]
+        
+    \end{options} 
+     \reason 
+       
+     We know everything we need to find $\condp{B_3}{A}$. It is all 
+     calculations from here onwards
+     
+     \begin{align}
+	\condp{B_3}{A} &= \dfrac{\condp{A}{B_3}\cdot \prob{B_3}}{\sum_{k=1}^3 \condp{A}{B_k}\cdot \prob{B_k}} \\
+	&= \underbrace{\left[\dfrac{\frac{1}{3}\cdot \frac{2}{9}}{\frac{1}{3}\cdot \left(\frac{1}{5}+\frac{1}{3}+\frac{2}{9} \right)} \right]}_{\prob{B_1}=\prob{B_2} = \prob{B_3} = \frac{1}{3}} = \frac{5}{17}
+\end{align}  
+\end{step}
+
+\end{problem} 
+\end{document}

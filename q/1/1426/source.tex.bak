@@ -1,0 +1,27 @@
+\documentclass[14pt,fleqn]{extarticle}
+\RequirePackage{prepwell-eng}
+
+\previewoff 
+
+\begin{document} 
+\begin{problem}
+	\statement 
+    
+    Find the area defined by 
+    
+    \begin{step}
+  \begin{options} 
+     \correct 
+       
+       \begin{center}
+\includegraphics[scale=0.25]{1426-J.svg}
+\end{center}
+        
+    \end{options} 
+     \reason
+     
+     Some reason  
+       
+\end{step} 
+\end{problem} 
+\end{document} 

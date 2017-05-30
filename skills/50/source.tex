@@ -1,0 +1,51 @@
+\documentclass[14pt,fleqn]{extarticle}
+\RequirePackage{prepwell-eng}
+
+\previewoff
+
+\begin{document}
+
+\begin{skill}
+\begin{narrow}
+\textcolor{blue}{Integration by Parts:} 
+
+Evaluating $\int f(x)\cdot g(x)\cdot dx$ ; Applying $ILATE$ to ease integration
+\end{narrow}
+
+\reason 
+
+Given two functions $f(x)$ and $g(x)$
+\[ \int f\cdot g\cdot dx = f\underbrace{\int g\cdot dx}_A - \underbrace{\int \left[f'\int g\cdot dx \right]\cdot dx}_{B}\]
+Note that there are \underline{2 separate integrals} to evaluate -- $A,$ and $B$\newline 
+
+\textbf{ILATE}
+
+But what is $f(x)$ in, say, $\int x\cdot\sin x\cdot dx$?  There are no right or wrong answers. Only better ones.\newline 
+
+In the table below, let \underline{$f(x)$} be the function that 
+\underline{matches first}
+\begin{center}
+\begin{tabular}{ccMM}
+\midrule
+	 & \text{Meaning} & \text{Example} & \int x\sin x\cdot dx\\
+\midrule
+	\text{I} & \text{Inverse Trig.} & \sin^{-1} x, \tan^{-1} x & \\
+\midrule
+	\text{L} & \text{Logarithmic} & \log x & \\
+\midrule
+	\text{A} & \text{Algebraic} & x^2, 4x^7 & f(x) =x \\
+\midrule
+	\text{T} & \text{Trigonometric} & \sin x, \cos 3x & g(x) = \sin x \\
+\midrule
+	\text{E} & \text{Exponential} & e^x, 7^x & \\
+\midrule
+
+\end{tabular}
+\end{center}
+
+\textbf{An important result} 
+
+Integration by parts also yields the following important result 
+\[ \quad \int e^x\cdot \left[f(x) + f'(x) \right]\cdot dx = e^x\cdot f(x) + C \]
+\end{skill}
+\end{document}

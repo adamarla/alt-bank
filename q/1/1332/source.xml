@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question xmlns="http://www.gradians.com" chapterId="0">
+  <statement>
+    <tex isImage="true">tex-1.svg</tex>
+  </statement>
+  <step>
+    <options>
+      <tex isImage="true">tex-2.svg</tex>
+    </options>
+    <reason>
+      <tex>%text
+We only know the radius $R$ of the sphere,
+but not of the cylinder. 
+
+However, we can see that \underline{\text{for some $\theta$}} as 
+shown in the figure
+%
+\begin{align}
+R_C &amp;= R\cdot\cos\theta
+\end{align} 
+%text
+
+Moreover, half the cylinder lies in one 
+hemisphere and half in the other. And so, 
+%
+\begin{align}
+H_C &amp;= R\sin\theta + R\sin\theta = 2\cdot R\sin\theta
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="26"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex isImage="true">tex-5.svg</tex>
+    </options>
+    <reason>
+      <tex isImage="true">tex-6.svg</tex>
+    </reason>
+    <skills>
+      <skill id="33"/>
+      <skill id="30"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex isImage="true">tex-7.svg</tex>
+      <tex isImage="true" correct="false">tex-8.svg</tex>
+    </options>
+    <reason>
+      <tex isImage="true">tex-9.svg</tex>
+    </reason>
+    <skills>
+      <skill id="1"/>
+    </skills>
+  </step>
+</question>

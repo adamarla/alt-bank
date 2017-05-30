@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question xmlns="http://www.gradians.com" chapterId="23">
+  <statement>
+    <tex isImage="true">tex-1.svg</tex>
+  </statement>
+  <step>
+    <options>
+      <tex isImage="true">tex-2.svg</tex>
+    </options>
+    <reason>
+      <tex isImage="true">tex-3.svg</tex>
+    </reason>
+    <skills>
+      <skill id="64"/>
+      <skill id="58"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex isImage="true">tex-4.svg</tex>
+      <tex isImage="true" correct="false">tex-5.svg</tex>
+    </options>
+    <reason>
+      <tex isImage="true">tex-6.svg</tex>
+    </reason>
+    <skills>
+      <skill id="33"/>
+      <skill id="1"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex isImage="true">tex-7.svg</tex>
+      <tex isImage="true" correct="false">tex-8.svg</tex>
+    </options>
+    <reason>
+      <tex isImage="true">tex-9.svg</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex isImage="true">tex-10.svg</tex>
+    </options>
+    <reason>
+      <tex isImage="true">tex-11.svg</tex>
+    </reason>
+    <skills>
+      <skill id="64"/>
+    </skills>
+  </step>
+</question>

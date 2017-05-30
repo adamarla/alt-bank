@@ -1,0 +1,33 @@
+\documentclass[14pt,fleqn]{extarticle}
+\RequirePackage{prepwell-eng}
+
+\newcommand\fx{\log \tan \dfrac{x}{2}}
+\previewoff
+
+\begin{document} 
+\begin{snippet}
+    
+    \incorrect
+    
+    $f(x) = \fx$ is decreasing at $x=\dfrac{3\pi}{2}$
+    
+    
+    \reason
+    
+    This is a trick question. For $f'(x)$ to be defined, $f(x)$ must also be defined 
+    at that point. But $f(x)$ is not defined at $x=\dfrac{3\pi}{2}$\newline 
+    
+    Here is why \newline 
+    
+    $f(x) = \log \left(\tan\frac{x}{2} \right)$. Hence, $\tan\frac{x}{2} > 0$ for $f(x)$ to be defined \newline 
+    
+    But at $x = \frac{3\pi}{2}, \tan\frac{x}{2} = \tan\frac{3\pi}{4} < 0$\newline 
+    
+    Hence, $f(x)$ is not defined. And therefore, neither is $f'(x)$\newline 
+    
+    The question of $f(x)$ increasing or decreasing at $x=\frac{3\pi}{2}$ therefore does not arise  
+
+    
+    
+\end{snippet} 
+\end{document} 
