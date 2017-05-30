@@ -20,13 +20,13 @@ Given the following events
 \begin{center}
 \begin{tabular}{NcN}
 \midrule
-\text{Event} & Meaning & \text{Probability} \\ 
+\text{Event} & \text{Meaning} & \text{Probability} \\ 
 \midrule 
-A & A speaks the truth & 0.6 \\
+A & \text{$A$ speaks the truth} & 0.6 \\
 \midrule
-B & B speaks the truth & 0.9 \\ 
+B & \text{$B$ speaks the truth} & 0.9 \\ 
 \midrule 
-C & A and B contradict & ? \\
+C & \text{$A$ and $B$ contradict} & ? \\
 \midrule 
 \end{tabular}
 \end{center} 
@@ -40,13 +40,13 @@ Given the following events
 \begin{center}
 \begin{tabular}{NcN}
 \midrule
-\text{Event} & Meaning & \text{Probability} \\ 
+\text{Event} & \text{Meaning} & \text{Probability} \\ 
 \midrule 
-A & A speaks the truth & 0.6 \\
+A & \text{$A$ speaks the truth} & 0.6 \\
 \midrule
-B & B speaks the truth & 0.9 \\ 
+B & \text{$B$ speaks the truth} & 0.9 \\ 
 \midrule 
-C & A and B contradict & ? \\
+C & \text{$A$ and $B$ contradict} & ? \\
 \midrule 
 \end{tabular}
 \end{center} 
@@ -59,15 +59,15 @@ C & A and B contradict & ? \\
 \begin{center}
   \begin{tabular}{ccc}
    \toprule
-        $A$& $B$ & Contradiction? \\
+        $A$& $B$ & \text{Contradiction?} \\
    \midrule
-   Lies & Lies & No \\ 
+   \text{Lies} & \text{Lies} & \text{No} \\ 
     \midrule 
-    Lies & Does not lie & Yes \\ 
+    \text{Lies} & \text{Does not lie} & \text{Yes} \\ 
     \midrule 
-    Does not lie & Lies & Yes \\
+    \text{Does not lie} & \text{Lies} & \text{Yes} \\
     \midrule 
-    Does not lie & Does not lie & No \\
+    \text{Does not lie} & \text{Does not lie} & \text{No} \\
     \bottomrule
   \end{tabular}
 \end{center}
@@ -100,13 +100,13 @@ Otherwise, $B$ is more reliable
 \begin{center}
   \begin{tabular}{Nl}
    \toprule
-        \text{Probability} & Of  \\
+        \text{Probability} & \text{Of} \\
    \midrule 
-   \condp{A}{C} & $A$ speaking truth given \\
+   \condp{A}{C} & \text{$A$ speaking truth given} \\
    & contradiction $C$\\
     \midrule 
-    \condp{C}{A} & Contradiction $C$ given $A$ \\
-    & speaking the truth \\
+    \condp{C}{A} & \text{Contradiction $C$ given $A$} \\
+    & \text{speaking the truth} \\
     \bottomrule
   \end{tabular}
 \end{center}
@@ -141,11 +141,11 @@ We know $P(A), P(B)$ and $P(C)$. But what are $\condp{C}{A}$ and $\condp{C}{B}$?
 \begin{center}
   \begin{tabular}{NlN}
    \toprule
-        &  What needs to happen & \text{Equals} \\
+        &  \text{What needs to happen} & \text{Equals} \\
    \midrule 
-   \condp{C}{A} & $B$ must lie for contradiction & P(B')\\
+   \condp{C}{A} & \text{$B$ must lie for contradiction} & P(B')\\
     \midrule 
-    \condp{C}{B} & $A$ must lie for contradiction & P(A') \\
+    \condp{C}{B} & \text{$A$ must lie for contradiction} & P(A') \\
     \bottomrule
   \end{tabular}
 \end{center}
