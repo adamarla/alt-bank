@@ -19,7 +19,7 @@ The scalar triple product of three vectors is expressed as $\ora{a}\cdot(\ora{b}
     c_1 &amp; c_2 &amp; c_3 \end{array}\right|
 \end{align} \\
 %text
-A key attributes of the vector triple product is circular shift invariance, i.e.,
+A key attributes of the scalar triple product is circular shift invariance, i.e.,
 %
 \begin{align}
   \ora{a}\cdot(\ora{b}\times\ora{c})= \ora{c}\cdot(\ora{a}\times\ora{b}) = \ora{b}\cdot(\ora{c}\times\ora{a})
